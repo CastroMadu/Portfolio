@@ -183,14 +183,16 @@ textarea {
 .d-none {
   display: none; }
 
-.home-hero {
+.home-hero{
   color: #fff;
   background: linear-gradient(to right,rgba(75,0,130), rgba(75,0,130)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
-  position: relative; }
+  position: relative; 
+}
+
   @media only screen and (max-width: 37.5em) {
     .home-hero {
       height: unset;

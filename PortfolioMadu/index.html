@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <meta name="descrição" content="Portfolio" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+      emailjs.init({
+        publicKey: "AyXoUqUj3hTxSx6UV",
+      });
+     })();
+    </script>
   </head>
   <body>
     <header class="header">
@@ -287,7 +298,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button type="submit" onclick="sendMail()" class="btn btn--theme contact__btn">
               Enviar
             </button>
           </form>
@@ -336,11 +347,9 @@
 
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-           Copyright 2021 - 2024  &copy;  Todos os direitos reservados.
+           Copyright 2024  &copy;  Todos os direitos reservados.
         </div>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
   </body>
 </html>
